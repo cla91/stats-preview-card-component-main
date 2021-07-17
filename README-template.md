@@ -43,19 +43,13 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+This was my first project and it was quite challenging, but I learnt a lot.
+* I'm not a PRO Member, so I've had to guess a lot of sizes with not so little trouble 😅. I used Photoshop and the firefox developer tool to aid me in all the process, expecially for typography. 
+* I found out that when resizing window with firefox developer tool, instead of int number for the content it uses float. This gave me a lot of trouble with the media queries, because at first I wanted to set the max width for the mobile at 375px and the min width for the desktop at 376px. The problem arose because when selecting a viewport of 375px the browser actually calculated the content at 375.2px (which makes no sense to me, I mean portions of 1 px don't exist), so in the range between 375 and 376 the media queries didn't work, because it was outside of range. After serching on google I found this link
+* 
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
