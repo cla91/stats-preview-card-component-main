@@ -1,0 +1,176 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header, section, picture {
+  display: block; /* for older browsers */
+}
+html {
+  font-size: 15px;
+}
+body {
+  background-color: hsl(233, 47%, 7%); /*very dark blue*/
+  font-family: "Inter", sans-serif;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%); /*dark desaturated blue*/
+  color: hsla(0, 0%, 100%, 0.75); /*slightly transparent white*/
+  border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card-header {
+  background-color: hsl(277, 100%, 35%);
+}
+
+.card-header img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  opacity: 0.5;
+}
+
+.card-content h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: 0.01rem;
+}
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.card-content strong {
+  color: hsl(277, 64%, 61%);
+}
+.card-content .card-stat {
+  list-style-type: none;
+  line-height: 1.6rem;
+}
+.card-stat .stat-head {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.card-stat .stat-sub {
+  color: hsla(0, 0%, 100%, 0.6);
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.07rem;
+}
+
+/*small screen*/
+@media only screen and (max-width: 768px) {
+  .card {
+    max-width: 654px;
+    width: 87%;
+    margin: 5.9rem 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card-header {
+    margin-bottom: 2.3rem;
+  }
+  .card-content {
+    text-align: center;
+  }
+  .card-content h1 {
+    margin: 1rem 2.3rem;
+  }
+  .card-content p {
+    margin: 1rem 2.3rem;
+  }
+  .card-content .card-stat {
+    margin: 2rem 2.3rem;
+  }
+  .card-stat .stat-sub {
+    margin-bottom: 1rem;
+  }
+}
+
+/*big screen*/
+@media only screen and (min-width: 769px) {
+  .card-container {
+    position: relative;
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .card {
+    max-height: 446px;
+    max-width: 1110px;
+    width: 95%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-header {
+    margin-left: auto;
+  }
+  .card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    width: 35%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
+  }
+  .card-content h1 {
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+  }
+  .card-content p {
+    margin-bottom: 15%;
+  }
+  .card-content .card-stat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .card-content .card-stat li {
+    margin-right: 15%;
+  }
+}
