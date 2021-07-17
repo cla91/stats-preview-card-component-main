@@ -2,32 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <div class="card-container">
+    <div class="card">
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <header class="card-header">
+        <picture>
+          <source media="(min-width: 769px)" srcset="images/image-header-desktop.jpg">
+          <source srcset="images/image-header-mobile.jpg">
+          <img src="images/image-header-desktop.jpg" alt="people in a office">
+        </picture>
+      </header>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <section class="card-content">
+        <h1>Get <strong>insights</strong> that help your business grow.</h1>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.</p>
+        <ul class="card-stat">
+          <li><span class="stat-head">10k+</span> <span class="stat-sub">companies</span></li>
+          <li><span class="stat-head">314</span> <span class="stat-sub">templates</span></li>
+          <li><span class="stat-head">12M+</span> <span class="stat-sub">queries</span></li>
+        </ul>
+      </section>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
 </body>
 </html>
