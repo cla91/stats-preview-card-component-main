@@ -47,51 +47,27 @@ Users should be able to:
 ### What I learned
 
 This was my first project and it was quite challenging, but I learnt a lot.
-* I'm not a PRO Member, so I've had to guess a lot of sizes with not so little trouble 😅. I used Photoshop and the firefox developer tool to aid me in all the process, expecially for typography. 
-* I found out that when resizing window with firefox developer tool, instead of int number for the content it uses float. This gave me a lot of trouble with the media queries, because at first I wanted to set the max width for the mobile at 375px and the min width for the desktop at 376px. The problem arose because when selecting a viewport of 375px the browser actually calculated the content at 375.2px (which makes no sense to me, I mean portions of 1 px don't exist), so in the range between 375 and 376 the media queries didn't work, because it was outside of range. After serching on google I found this link
-* 
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+* I'm not a PRO Member, so I've had to guess a lot of sizes with not so little trouble 😅. I used Photoshop and the firefox developer tool to aid me in all the process, expecially for typography;
+* I found out that when resizing window with firefox developer tool, instead of int number for the content it uses float. This gave me a lot of trouble with the media queries, because at first I wanted to set the max width for the mobile at 375px and the min width for the desktop at 376px. The problem arose because when selecting a viewport of 375px the browser actually calculated the content at 375.2px (which makes no sense to me, I mean portions of 1 px don't exist), so in the range between 375 and 376 the media queries didn't work, because it was outside of range. After serching on google I found this [link](https://stackoverflow.com/questions/63637584/bug-with-browsers-interpretation-of-media-queries) that explained well my problem. It seems this is "normal" firefox behavior and it's not a "real" problem because media queries usally target a broad range of screen size and there's little to no device that actually has a width so near to the breakpoints. In the end, I changed the breakpoint to a wider one because I thougth that the one column layout would work well on tablet too. The problem is still there, but I don't know what's the best solution.
+* I learnt that when using the picture element, if you don't apply the display: block property to the img element, the picture element actually adds height to the img itself;
+* I also learnt how to apply a color overlay on an image;
+* I learnt how to vertical align div in the whole page using the vh unit;
+* It was my first time using rem units and it was way more manageable than em units;
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+* I should practice more using flexbox and should definitely learn CSS grids.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Convert typographic property from PS to CSS](https://martinwolf.org/before-2018/blog/2016/02/convert-typographic-properties-from-photoshop-to-css/) - This helped me with the typography. I don't this I would have made it this well without it. I'll definitely use it again, if like this time I've only a static image of the design.
+- [PX to EM conversion](https://www.w3schools.com/tags/ref_pxtoemconversion.asp) - It was fundamental. 
+- [Autoprefixer](https://autoprefixer.github.io/) - I wouldn't know where to begin whitout it 😄.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@cla91](https://www.frontendmentor.io/profile/cla91)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
