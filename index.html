@@ -11,22 +11,22 @@
   <title>Frontend Mentor | Stats preview card component</title>
 
   <link rel="stylesheet" href="styles.css">
-
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: white; margin-bottom: 10px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
 
-  <div class="card-container">
-    <div class="card">
-
-      <header class="card-header">
-        <picture>
-          <source media="(min-width: 769px)" srcset="images/image-header-desktop.jpg">
-          <source srcset="images/image-header-mobile.jpg">
-          <img src="images/image-header-desktop.jpg" alt="people in a office">
-        </picture>
-      </header>
-
-      <section class="card-content">
+  <main class="container">
+    <section class="card">
+      <picture class="card-img">
+        <source media="(width > 768px)" srcset="images/image-header-desktop.jpg">
+        <source srcset="images/image-header-mobile.jpg">
+        <img src="images/image-header-desktop.jpg" alt="people in a office">
+      </picture>
+      <div class="card-content">
         <h1>Get <strong>insights</strong> that help your business grow.</h1>
         <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
         experience, and overall efficiency.</p>
@@ -35,9 +35,14 @@
           <li><span class="stat-head">314</span> <span class="stat-sub">templates</span></li>
           <li><span class="stat-head">12M+</span> <span class="stat-sub">queries</span></li>
         </ul>
-      </section>
-
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/cla91">Claudia Cantiani</a>.
     </div>
-  </div>
+  </footer>
 </body>
 </html>
